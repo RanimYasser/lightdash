@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: skydeo_insights
+    database: sky-431813
+    schema: skydeo_insights
+    tables:
+      - name: contingency_table_in_prod
+   
