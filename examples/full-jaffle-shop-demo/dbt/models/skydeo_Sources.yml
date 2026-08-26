@@ -4,5 +4,44 @@ sources:
     database: sky-431813
     schema: skydeo_insights
     tables:
-      - name: contingency_table_in_prod
-   
+      - name: contingency_table_in_prod_new
+        columns:
+          - name: segmentA
+          - name: segmentB
+          - name: overlapCount
+            meta:
+              metrics:
+                overlap_count_max:
+                  type: max
+                overlap_count_sum:
+                  type: sum
+          - name: segA_count
+            meta:
+              metrics:
+                segA_count_max:
+                  type: max
+          - name: segB_count
+            meta:
+              metrics:
+                segB_count_max:
+                  type: max
+          - name: segA_skydeoName
+          - name: segA_category1
+          - name: segA_category2
+          - name: segA_category3
+          - name: segA_category4
+          - name: segB_skydeoName
+          - name: segB_category1
+          - name: segB_category2
+          - name: segB_category3
+          - name: segB_category4
+          - name: affinity_score
+            meta:
+              metrics:
+                affinity_score_avg:
+                  type: average
+          - name: overlap_perc
+            meta:
+              metrics:
+                overlap_perc_avg:
+                  type: average
