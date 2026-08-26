@@ -4,7 +4,7 @@ sources:
     database: sky-431813
     schema: skydeo_insights
     tables:
-      - name: contingency_table_in_prod_new
+           - name: contingency_table_in_prod_new
         columns:
           - name: segmentA
           - name: segmentB
@@ -26,15 +26,45 @@ sources:
                 segB_count_max:
                   type: max
           - name: segA_skydeoName
+            meta:
+              dimension:
+                type: string
           - name: segA_category1
+            meta:
+              dimension:
+                type: string
           - name: segA_category2
+            meta:
+              dimension:
+                type: string
           - name: segA_category3
+            meta:
+              dimension:
+                type: string
           - name: segA_category4
+            meta:
+              dimension:
+                type: string
           - name: segB_skydeoName
+            meta:
+              dimension:
+                type: string
           - name: segB_category1
+            meta:
+              dimension:
+                type: string
           - name: segB_category2
+            meta:
+              dimension:
+                type: string
           - name: segB_category3
+            meta:
+              dimension:
+                type: string
           - name: segB_category4
+            meta:
+              dimension:
+                type: string
           - name: affinity_score
             meta:
               metrics:
