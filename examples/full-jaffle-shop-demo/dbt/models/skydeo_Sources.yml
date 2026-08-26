@@ -4,7 +4,7 @@ sources:
     database: sky-431813
     schema: skydeo_insights
     tables:
-           - name: contingency_table_in_prod_new
+      - name: contingency_table_in_prod_new
         columns:
           - name: segmentA
           - name: segmentB
